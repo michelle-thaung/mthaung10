@@ -1,0 +1,50 @@
+Team MASS (Stella Oh, Ethan Shenker, Michelle Thaung)
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity
+2020-10-06
+
+Our source: OUR HERO ZERO ETHAN SHENKER who learned about virtual environments
+            from Python documentation and W3Schools that he read over the years
+
+0. The command 
+
+		$ python3 -m venv ~/myherozero
+
+		     		aka
+
+		Create a virtual environment (venv) 
+        	that is stored in the directory name myherozero
+
+1. Create a virtual environment by using the built-in module titled venv in python3 by
+   using the flag -m which means look inside the modules that exist within python3
+2. Can access stuff in myherozero even by not activating it but cannot work with it
+   
+			ex) $ ls 
+
+    			bin include lib pyvenv.cfg
+
+3.  The command
+
+		$ source myherozero/bin/activate 
+	
+	switches the python environment that you're in to the python version the
+        virtual environment is running under 
+
+4. When user is in the virtual environment, command line indicates this by putting
+   the virtual environment's directory name at the beginning of the command line
+   in parentheses 
+			ex) (myherozero) user:~ username$
+
+5. myherozero is a directory that holds the virtual environment which is operating under 
+   a certain version of python of your choosing
+6. Creating a virtual environment allows you to maintain separate versions of python 
+   Which then allow you to maintain separate versions of the same modules within python
+
+			ex) 0. module a v1 exists on your computer
+			    1. You then need module a v1 in a project, but you'd like to 
+			       update module a v1 to module a v2 on your computer
+			    2. Use a virtual environment to maintain v1 for your project
+			       while using module a v2 elsewhere on your computer
+
+7. Modules* exist in include directory within the virtual environment. *Modules are
+   packages of code that other people have written
