@@ -1,17 +1,25 @@
-Team MASS (Stella Oh, Ethan Shenker, Michelle Thaung)
+Team MASS (Stella Oh, Ethan Shenker, Michelle Thuang)
 SoftDev
 K08 -- Cross Pollination and Virtual Insanity
 2020-10-06
 
 (<name>) = credits to <name>
 
-* Concise robust code + comments = clarity (SOSO) * Don’t be afraid to show test cases (SOSO) * Nesting of many methods at once (MT) * String concatenation (MT) * Finding helpful keywords that were probably acquired through research (del, next, etc.) (Team MASS) * F string method: print(f”text {var_name} text.”) (ES) * Can title methods from modules as whatever function name you want: (ES)
+0. Concise robust code + comments = clarity (SOSO)
+1. Don’t be afraid to show test cases (SOSO)
+2. Nesting of many methods at once (MT)
+3. String concatenation (MT)
+4. Finding helpful keywords that were probably acquired through research (del, next, etc.) (Team MASS)
+5. F string method: print(f”text {var_name} text.”) (ES)
+6. Can title methods from modules as whatever function name you want: (ES)
+	
 	ex)
 		from random import randint as r (ES)
- * COOL WAY TO MAKE A LIST WITH RANDOMIZED NUMBERS (ES) 
+7. COOL WAY TO MAKE A LIST WITH RANDOMIZED NUMBERS (ES)
 Instead of creating an empty array and having a for loop that appends integers to it, you can do:  	
 	ex)
 		arr = [ randint(1,8) for x in range(10) ]
 		arr = [ x for x in range(10) ] : [0,1,2,3,4,5,6,7,8,9]
 
-* Not using keywords as variable names (Team MASS) * Neat formatting for comment block: creating a table out of characters (Team MASS) 
+8. Not using keywords as variable names (Team MASS)
+9. Neat formatting for comment block: creating a table out of characters (Team MASS)
