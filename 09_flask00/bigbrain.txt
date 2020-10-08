@@ -1,0 +1,24 @@
+Team MESS (Stella Oh, Ethan Shenker, Michelle Thuang)
+SoftDev
+K09 -- Simple Path to Greatness
+2020-10-08
+
+0. Java. Variable = object(<parameter>)
+1. Reference to home directory path of flask app.
+2. Prints into shell that the python script is running in. 
+3. Will print __main__ in the shell
+4. No hablo queso! Is displayed on the webpage. We see No hablo queso! printed on the website.
+5. Java
+
+Notes:
+After running:
+
+$ python3 app.py
+.
+.
+.
+* Running on https://some-link/
+
+^server that computer hosts which is a website that runs app.py
+
+Once user clicks on website, __main__ is printed in the terminal
