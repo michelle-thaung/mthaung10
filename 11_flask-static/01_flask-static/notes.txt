@@ -1,0 +1,19 @@
+# Team MESS (Stella Oh, Ethan Shenker, Michelle Thuang)
+# SoftDev
+# K11 -- Some Things Never Change
+# 2020-10-14
+
+Notes:
+
+app.py - looks the same as it has previously
+    - app.py behaves like it has previously as well
+
+static directory - 
+    - contains foo and foo.html, which contain the same text
+
+foo
+    - when accessing localhost:5000/static/foo
+        - foo file is downloaded to computer
+    
+foo.html
+    - load as we would have expected, displaying plaintext to browser
