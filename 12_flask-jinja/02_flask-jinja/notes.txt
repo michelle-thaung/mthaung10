@@ -1,0 +1,20 @@
+# Team MESS (Stella Oh, Ethan Shenker, Michelle Thuang)
+# SoftDev
+# K12 -- ...or The Only Constant is Change?
+# 2020-10-14
+
+
+A0. Name Error displayed by Flask - name render_template not found
+
+When render_template is replaced and the page for localhost:5000/my_foist_template 
+is loaded, the sequence defined in app.py is displayed vertically. 
+
+Initial question: why does each element display on top of one another?
+Answer: <br> tag in for loop in model_tmplt.html
+
+A1. Yes.
+
+A2. In observing variable names in model_tmplt.html, such as
+foo in the title, or collection for the list being iterated through,
+we saw that positional arguments to the render_template function are those
+being referenced in the html file.
