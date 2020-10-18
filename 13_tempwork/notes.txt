@@ -1,0 +1,15 @@
+#Team Meow Wow -- Michelle Thaung, Mary Shang, Stella Oh
+#SoftDev
+#K13: Template for Success
+#2020-10-18
+
+- Encountered an issue trying to access 'occupations.csv' 
+    Given error: FileNotFoundError: [Errno 2] No such file or directory: 'occupations.csv'
+- Solved issue by concatenating its path to the file name
+- Could not figure out how to iterate through a dictionary in Jinja2
+    - Instead, found method of iterating through multiple lists in a single for loop in Jinja2 at "Discuss ERP Next" website
+- Most notable line from egolessprogramming.pdf: 
+    "Average people can be trained to accept their humanity—their inability to function like a machine—and to value it and 
+    work with others so as to keep it under the kind of control needed if programming is to be successful."
+
+Sadly, not feeling too flasky after struggling to find a way to iterate through a dictionary for over an hour. :(

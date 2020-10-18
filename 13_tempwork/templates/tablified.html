@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- 
+    Team Meow Wow -- Michelle Thaung, Mary Shang, Stella Oh
+    SoftDev
+    K13: Template for Success
+    2020-10-18
+  
+ -->
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <h1>{{ heading }}</h1>
+        <h3>{{ TNPG }}</h3>
+    </head>
+
+    <body>
+        <p>{{ rand_occ }}</p>
+        <table>
+            <tr>
+                <th>Occupation</th>
+                <th>Percentage</th>
+            </tr>
+            {% for item in collection %} 
+            {% set item_1 = collection[loop.index-1] %}
+            {% set item_2 = percentage[loop.index-1] %}
+            <tr>
+                <td>
+                    {{ item_1 }}
+                </td>
+                <td>
+                    {{ item_2 }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+      </body>
+</html>
+
