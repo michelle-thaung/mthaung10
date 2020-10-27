@@ -1,0 +1,104 @@
+Team Meow Wow (Stella Oh, Michelle Thuang, Mary Shang)
+SoftDev
+LJ00 -- MongoDB Ch1
+2020-10-21
+
+To connect to the Atlas cluster:
+mongo "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin"
+
+JSON vs BSON
+MongoDB stores data in BSON, internally and over the network,
+and you can then view it in JSON.
+
+- if exporting to a different system, better to export as BSON than JSON
+- if exporting to a local systEM, JSON is better
+
+JSON FORMAT:
+- starts and end {}
+- key and values are separated by :
+- each key-value pair is separated by
+- keys are surrounded by ""
+- keys interchangeable with fields
+- can be natively stored and retrieved in MongoDB
+
+JSON PROS
+- user-friendly
+- readable
+- familiar
+
+JSON CONS
+- text-based, slow to read
+- space-consuming
+- support limited number of datatypes
+
+BSON (binary JSON)
+- optimized for speed, space and flexibility
+- supports a bigger range of datatypes
+- faster to parse
+- lighter to store
+- provides additional features like speed and flexibility
+
+URI string (unifrom Resource Identifier)
+SRV connection string - a specific format used to establish a connection
+                        between your application and a MongoDB instance
+
+JSON
+mongoimport --uri="mongodb+srv://<your username>:<your password>@<your
+                   cluster>.mongodb.net/sample_supplies" --drop <file>.json
+            - uses --uri "<Atlas Cluster URL>"
+            - --drop <file>.json
+
+mongoexport --uri="mongodb+srv://<your username>:<your password>@<your
+                   cluster>.mongodb.net/sample_supplies" --collection=sales --out=<file>.json
+            - uses --uri "<Atlas Cluster URI>"
+            	       --collection=<collection>
+            	       --out=<filename>.json
+
+
+BSON
+mongodump --uri "mongodb+srv://<your username>:<your password>@<your
+                 cluster>.mongodb.net/sample_supplies"
+          --uri "<Atlas Cluster URI>"
+
+mongorestore --uri "mongodb+srv://<your username>:<your password>@<your
+                    cluster>.mongodb.net/sample_supplies"  --drop dump
+             --uri "<Atlas Cluster URI>"
+             --drop dump
+
+Data Explorer
+- uses Atla UI
+- go to Data Explorer by clicking 'Collections
+- on the left will be a bunch of databases; click the one needed
+- use Search Bar for specific queries uses field-values, can use multiple
+
+Namespace
+- The concatenation of the database name and collection name is called a namespace.
+
+COMMANDS:
+$ show dbs
+shows the list of databases that are in the cluster
+can see the admin and local databases
+
+$ use sample_training
+- like cd except into Namespace
+
+$ show collections
+- shows the collections in the UI
+
+$ db.<collection_name>.find(<query>)
+- finds documents that have the query^ in them
+
+$ db.<collection_name>.find()
+- first 20 documents are presented to you in no particular order
+
+$db.<collection name>.find(<query>).count()
+- counts how many collections have query
+
+$db.<collection name>.find(<query>).pretty()
+- returns the documents that match the given query formatted for ease of reading
+
+$ it
+- similar to more/less command in Terminal
+- iterates through a cursor
+- cursor is a pointer to a result set of a query
+- pointer is a direct address to a memory location

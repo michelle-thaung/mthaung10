@@ -1,0 +1,45 @@
+Team Meow Wow (Stella Oh, Michelle Thuang, Mary Shang)
+SoftDev
+LJ00 -- MongoDB Ch1
+2020-10-21
+
+DEFINITIONS:
+MongoDB is a NoSQL database which stores your data in an organized way
+but not in rows and columns
+
+Collection: an organized store of documents in MongoDB usually with common fields between documents.
+             There can be many collections per database and many documents per collection.
+
+Document: a way to organize and store data as a set of field-value pairs
+
+Field: a unique identifier for a datapoint
+
+Value: data related to a given identifier
+
+Replica Set: a few connected machines that store the same data to ensure that
+a             Comes from the word replicate - to copy something.
+
+Instance: a single machine locally or in the cloud, running a certain software,
+in our case it is the MongoDB database.
+
+Cluster: group of servers that store your data.
+
+NOTES:
+The MongoDB Database
+- a database is a structured way to store and acess data
+- A NoSQL databse: related tables of data
+- NoSQL documentDB: data in MongoDB is stored as documents
+- Documents are store in collections of documents
+
+Atlas manages details of creating clusters for you which runs and maintains databse
+deployment. This includes cloud service providers of your own choosing.
+
+2 ways to interact with cluster:
+1. Data Explorer by clicking the collections button which displays databass and collections
+   that you have in your cluster
+2. Shell by clicking the connect button
+
+In-browser IDE: a space where you can practice what you learned
+
+QUESTIONS:
+How does operations and logical size increase?
