@@ -1,7 +1,7 @@
 Team Meow Wow (Stella Oh, Michelle Thuang, Mary Shang)
 SoftDev
-LJ00 -- MongoDB Ch1
-2020-10-21
+LJ00 -- MongoDB Ch2
+2020-10-27
 
 To connect to the Atlas cluster:
 mongo "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin"
@@ -16,7 +16,7 @@ and you can then view it in JSON.
 JSON FORMAT:
 - starts and end {}
 - key and values are separated by :
-- each key-value pair is separated by
+- each key-value pair is separated by ,
 - keys are surrounded by ""
 - keys interchangeable with fields
 - can be natively stored and retrieved in MongoDB
