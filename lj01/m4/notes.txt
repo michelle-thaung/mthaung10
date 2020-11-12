@@ -1,5 +1,4 @@
-Team MEA
-Michelle Thaung, Erin Lee, Alvin Wu
+Team MEA - Michelle Thaung, Erin Lee, Alvin Wu
 SoftDev
 LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase
 2020-11-12
