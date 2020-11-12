@@ -1,0 +1,54 @@
+Team MEA
+Michelle Thaung, Erin Lee, Alvin Wu
+SoftDev
+LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase
+2020-11-12
+
+Comparison operators:
+- uses " $ "
+    allows access to field values
+    precedes MQL operators & aggregation pipelines
+    denotes the use of an operator
+
+$eq, $neq
+    - $eq is default if no comparison operator is inputted
+$gt, $lt
+$gte, lte
+
+{ <field>: { <operator>: <value> } }
+
+Logic operators:
+$and - match all specified query
+    - default operator
+        - { <field1>: { <operator1>: <value1>, <operator2>: <value2>, etc. } } 
+    - use if the same operator is needed multiple times in one query
+$or - at least one query match
+$nor - returns the ones that fail to match both given clauses
+
+all 3 format: { "$<operator>": [{clause1}, {clause2}, etc... ]} 
+
+$not - returns the ones not matching query
+format: {$not: {clause}}
+
+Expressive query operator:
+$expr - allows the use of aggregation expressions within query language, variables and conditional statements
+    format: { $expr: { <expression> } }
+
+- aggregation syntax: { <operator>: { <field>, <value> } }
+- MQL syntax: { <field>: { <operator>: <value> } }
+
+Array operators and Projection: 
+$push - add an element to an array if it was previously a different type
+$all - will return documents that have all elements in the array no matter the order
+    format: {<array field>: {"$all": <num>}}
+$size - will return all documents with that size of an array 
+    format: {<array field>: {"$size": <num>}}
+
+db.<collection>.find({<query>, {<projection>}})
+1 - include the field; 0 - exclude the field -- only use 1s or only 0s
+    find({"price": 1, "address": 1, "_id": 0})
+
+{"eleMatch": {"score": {"$gt": 95}} -- matches docs that have 1+ elements from query/project only array elements that have 1+ match
+
+Querying arrays and sub-documents:
+- use dot notation, ex: "start station location.type": "Point"
