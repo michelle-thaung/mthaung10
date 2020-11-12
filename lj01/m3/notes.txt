@@ -1,0 +1,58 @@
+Team MEA
+Michelle Thaung, Erin Lee, Alvin Wu
+SoftDev
+LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase
+2020-11-12
+
+To insert a new document:
+    - Insert Document button in Atlas
+    - every document must have a unique _id value
+
+ObjectId() - default value for _id if no user input
+
+Errors when Inserting Documents:
+    - duplicate key error: two documents with the same id 
+        - fix with drop command (removes a whole collection before inserting a new one)
+        - use insert():
+            - connect to Atlas cluster: mongo "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/admin"
+            - use the correct database
+            - choose a random document: db.<collection>.findOne();
+            - copy the document and insert it: db.<collection>.insert()
+
+- MongoDB can store duplicate docs in the same collection as long as they have different _id values
+- MongoDB has schema validation functionality which allows you to enforce doc structure
+
+Inserting Multiple Docunents
+- command: db.<collection>.insert([ { "field": value }, { "field": value }, { "field": value } ])
+    - should insert _id: {"_id" : id, "field": value)}
+- when inserting multiple, the default order is in the order it's given in
+- if default ordered and there is a duplicate key issue, MongoDB will stop inserting documents at that one
+    - to disable, do {"ordered": false}
+
+- collections/db are created when being used: 'use tools' followed by db.tractors.insert([{<doc1>}, {doc2}])
+  will create tools.tractors namespace
+
+  - can store your data in an array of objects
+
+- updateOne() - update the first document that matches the query
+- findOne() - returns the first document that matches the query
+- deleteOne() - should only use when querying by _id value
+
+- updateMany() - updates all documents that match the query
+- find() - returns all documents that matches the query
+- deleteMany()
+
+- can also use db.<collection>.drop() to delete a collection
+
+$inc syntax:
+{"$inc": {"pop": 10, "<field2>": <increment value>, ...}}
+increments field value by a specified amount
+
+$set syntax:
+{"$set": {"pop": 20000, "<field2>": <new value>, ...}}
+updates the value with the given one 
+- if the field doesn't exist, a new field will be created
+
+$push syntax:
+{$push: {<field1>: <value1>, ...}}
+adds an element to an array field
