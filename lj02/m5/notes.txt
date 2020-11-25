@@ -1,0 +1,55 @@
+Team Meow Wow - Michelle Thaung, Stella Oh, Mary Shang
+SoftDev
+LJ02: Le Voyage de Learnination avec Mongo, Troisième Phase
+2020-11-25
+
+Aggregation Framework
+- another way to query data
+- db.<collection>.aggregate([<array>])
+- Non-filter stages don't modify the original data, work with the data in the cursor
+- Field filters: 
+    - $match 
+    - $filter
+- Data in the aggregation pipeline exists within the pipeline.
+  It does not inherently modify or change the original data.
+- Aggregation syntax is in pipeline form (stages are executed in the order in which they are listed)
+    - $ followed by action 
+
+$group
+- takes the incoming stream of data and siphons it into multiple distinct reservoirs
+- Syntax: { $group: { _id: "<id>", <field1>: { <accumulator1> : <expression1> }, ... }}
+
+sort() and limit() - cursor methods like pretty() and count()
+- not applied to data but applied to the results set that lives in the cursor
+- sort()
+    - sorts data by one or more fields in increasing or decreasing direction
+        - ex: db.<collection>.find(<query>).sort({ "pop": 1, "city": -1 })
+        - -1 is decreasing, 1 is increasing
+- limit()
+    - user can specify how many docs are wanted
+        ex) db.<collection>.find(<query>).sort({ "pop": 1 }).limit(1)
+- MongoDB will do sort() first if sort() and limit() are both used
+
+Indexes
+- In a database: special data structure that stores a small portion of the collection's data set in an easy to traverse form
+- createIndex() make an index based on a field
+    db.<collection>.createIndex({<ind_field>: <number>})
+    db.<collection>.createIndex(<field>:<value>,<ind_field>: <number>})
+- Index avoids sorting
+- has single field index & compound field index
+
+Data Modeling
+- a way to organize fields in a document to support your application performances
+  and querying capabilities
+- RULE: Data is stored in the way that it is used
+- Data that is used together should be stored together
+- Evolving application implies an evolving data model
+
+Upsert
+- Syntax: db.collection.updateOne({<query>},{<update>}, {"upsert": true})
+- upsert is a hybrid of update and insert, should only be used when needed
+- default: false
+- if upset is set to true:
+    - if there is query match, doc will update
+    - create a new doc if no docs match query
+- Be mindful

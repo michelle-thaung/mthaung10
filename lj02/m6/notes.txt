@@ -1,0 +1,30 @@
+Team Meow Wow - Michelle Thaung, Stella Oh, Mary Shang
+SoftDev
+LJ02: Le Voyage de Learnination avec Mongo, Troisième Phase
+2020-11-25
+
+Atlas Data Explorer
+- Indexes tab allows you to view and create indexes
+- Schema Anti-Patterns tab provides advice about your data
+- Aggregation tab allows you to build aggregation pipelines
+- Can export pipeline code to a different programming language
+- use search for advanced text search functionality 
+
+Atlas:
+- an organization allows people to collaborate projects
+- each project can have multiple clusters
+
+Realm:
+- offers services that let you build web/mobile applications or integrate Atlas data into an application without worrying about servers
+- Dashboard - organization 
+
+Charts:
+- allows us to visualize data
+
+MongoDB Compass - GUI Product
+- provides connection to Atlas cluster/any other that you want to connect to
+- can see storage size, collections, and indexes of each databse
+- different data views
+- can filter, project, sort, limit, etc. documents
+- can export syntax into multiple programming languages
+- has Aggregatios, Indexes, Schema, Explain, and Validation 
