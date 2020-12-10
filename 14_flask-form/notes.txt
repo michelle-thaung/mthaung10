@@ -1,0 +1,13 @@
+# Team PurpleSnake (Michelle Thaung, Pak Ming Lau, Yi Ling Wu)
+# SoftDev
+# K14 -- Form and Function
+# 2020-12-10
+
+- GET method attaches variables to the end of URL string 
+- POST does not, everything is done on the back-end 
+
+From app.py file in notes-and-code20-21:
+- print(app) returns <Flask 'app'>
+- print(request) returns <Request 'http://127.0.0.1:5000/' [METHOD]>
+- print(request.args) returns ImmutableMultiDict([])
+- print(request.headers) returns Host, Connection, User-Agent, etc. 
