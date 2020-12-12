@@ -1,0 +1,13 @@
+# Team PurpleSnake (Michelle Thaung, Pak Ming Lau, Yi Ling Wu)
+# SoftDev
+# K15 -- Sessions Greetings
+# 2020-12-14
+
+To see cookies in dev console: 
+- Click the '>>' 
+- Click 'Application'
+- On the left side, under Storage, click 'Cookies', and then the webpage you're on 
+
+Session vs. Cookies:
+- Session stores cookies in the form of an array, hides values, requires a secret key, need to pop values to delete them
+- Cookies store individual bits of data separately
