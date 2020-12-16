@@ -2,3 +2,8 @@
 # SoftDev
 # K16 -- No Trouble
 # 2020-12-16
+
+- IF NOT EXISTS - use it with CREATE TABLE so we don't run into the error of creating a table that already exists
+- OR IGNORE - use it with INSERT so that we don't insert duplicate error
+    - if the insert returns an error, it doesn't run the insert command
+- when giving a text value to insert, surround it with '' or errors occur
