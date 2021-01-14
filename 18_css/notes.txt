@@ -1,0 +1,19 @@
+Team VM: Victoria Gao, Renee Mui, Michelle Thaung
+Softev pd1
+K18 -- Filler and Finery
+2021-01-12
+
+- On Windows computers, the eye dropper function in Paint can be used to find the exact color of an image.
+- The external CSS file is the same as the code in between the style tags for the internal version.
+- Multiple classes' attributes can be specified together as long as they are separated by a comma.
+    ex:     .navbar, .text {
+                background-color: #767676;
+            }
+- In HTML, the color for dark grey is actually lighter than the color for grey
+- Padding is the space between an element's borders and the content inside it. 
+	-padding: <integer>px can be used to change the size of an element by adding more space
+	and background color around text. 
+- Margin is the space around an element.  
+	-Use the margin property to move an element up, down, right, or left on a page.
+	If the width of a page is fixed, use "margin: auto" to center an element horizontally.
+	-margin: <integer>px adds space between elements (i.e. images, text)
