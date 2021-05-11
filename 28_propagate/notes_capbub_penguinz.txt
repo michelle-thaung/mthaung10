@@ -1,0 +1,41 @@
+Team Penguinz - Helena Williams and Michelle Thaung + (JH)
+SoftDev
+K28 -- Bubble Bubble Toil Trouble
+2021-05-11
+
+Prediction 1:
+Table with 2 rows and 3 columns populated with stuff that can be clicked on
+When clicked, pop-up will appear on screen
+
+Results 1:
+As predicted but missed that the clicked string appears in pop-up
+
+Prediction 2:
+Table with 2 rows and 3 columns populated with stuff that can be clicked on
+This time, each element in table, row, and table itself can be clicked on
+When row clicked pop-up of list with the 3 elements in row
+Pop-ups overlaps?
+When clicked, pop-up will appear on screen
+
+Results 2:
+When on string, all 3 pop-ups appear but from elem, to row, to table
+When on table border, only table pop-up (entire html table with tags euck)
+
+Prediction 3:
+Table with 2 rows and 3 columns populated with stuff that can be clicked on
+This time, each element in table, row, and table itself can be clicked on
+e.stopPropagation(); prevents multiple subsequent pop-ups and only causes the "first" thing clicked on to pop
+
+Results 3:
+Pop-up of the "highest level" in this case the entire table and not each element
+
+Prediction 4:
+Table with 2 rows and 3 columns populated with stuff that can be clicked on
+This time, each element in table, row, and table itself can be clicked on
+The 3rd argument in .addEventListener() essentially acts as preventDefault() if true
+The order does matter
+
+Results 4:
+Pop-up of the "highest level" in this case the entire table and not each element
+The order DOESN'T MATTER
+Pop-up is dictated by the highest level in HTML as opposed to order in JS (event listeners)
