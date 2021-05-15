@@ -1,0 +1,11 @@
+// Team Triangular Joe -- Jonathan Lee, Eric Lo, Michelle Thaung
+// SoftDev
+// K30 -- Jsorcery
+// 2021-05-15
+
+https://www.kirupa.com/html5/animating_many_things_on_a_canvas.htm
+
+-to make random colors for the fillstyle, you need to use template strings in javascript, which are surrounded by backticks
+ and equivalent to .format in python. the syntax is ${variable} inside the strings
+-to animate multiple things, you need to create objects and store them in a list, then iterate through that list as you're
+ drawing the next frame, and then request the next frame after all the iteration is done.
